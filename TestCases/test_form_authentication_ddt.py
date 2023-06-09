@@ -1,26 +1,25 @@
 from selenium.webdriver.common.by import By
-from PageObjects.form_authentication import FromAuthentication
+from PageObjects.form_authentication import FormAuthentication
 from Utilities.read_properties import ReadProperties
 from Utilities import excel_utils
 from Utilities.custom_logger import Logger
 
 
-class Test_003_FromAuthentication_DDT:
-    url = ReadProperties.get_login_url()
-    path = r"TestData/form_authentication_xl/RacanaaAssignment.xlsx"
+class Test_003_FormAuthentication_DDT:
+    url = ReadProperties.get_auth_url()
+    path = r"TestData/form_authentication/authData.xlsx"
     logger = Logger()
-    logger.log_info("***Test_003_FromAuthentication_DDT***")
 
     def test_login(self, setup):
+        self.logger.log_info("*** Test_003_FormmAuthentication_DDT ***")
         self.driver = setup
         self.driver.get(self.url)
         self.driver.maximize_window()
         self.driver.implicitly_wait(5)
-        self.login = FromAuthentication(self.driver)
-        self.logger.log_info("***From authentication DDT test start***")
+        self.login = FormAuthentication(self.driver)
+        self.logger.log_info("*** Form authentication DDT test start ***")
 
         self.rows = excel_utils.getRowCount(self.path, 'Sheet1')
-        print("Number Of Rows in a Excel:", self.rows)
         lst_status = []
 
         for r in range(2, self.rows + 1):
@@ -50,10 +49,9 @@ class Test_003_FromAuthentication_DDT:
                     lst_status.append("Pass")
 
         if "Fail" not in lst_status:
-            self.driver.close()
             assert True
         else:
-            self.driver.close()
             assert False
 
-        self.logger.log_info("***From authentication DDT test end***")
+        self.logger.log_info("*** Form authentication DDT test end ***")
+        self.driver.close()

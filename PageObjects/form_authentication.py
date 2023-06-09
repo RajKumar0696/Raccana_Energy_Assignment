@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 
-class FromAuthentication:
+class FormAuthentication:
     txt_username_id = "username"
     txt_password_id = "password"
     btn_login_xpath = "//*[@id='login']/button/i"

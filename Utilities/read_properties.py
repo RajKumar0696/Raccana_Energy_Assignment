@@ -6,7 +6,7 @@ config.read_file(file)
 
 class ReadProperties:
     @staticmethod
-    def get_broken_link_url():
+    def get_broken_image_url():
         url = config.get('common_info', 'broken_image_url')
         return url
 
@@ -16,18 +16,18 @@ class ReadProperties:
         return url
 
     @staticmethod
-    def get_login_url():
-        url = config.get('common_info', 'from_authentication')
+    def get_auth_url():
+        url = config.get('common_info', 'form_authentication_url')
         return url
 
     @staticmethod
     def get_alert_url():
-        url = config.get('common_info', 'java_script_alert')
+        url = config.get('common_info', 'java_script_alert_url')
         return url
 
     @staticmethod
     def get_drop_down_url():
-        url = config.get('common_info', 'drop_down')
+        url = config.get('common_info', 'drop_down_url')
         return url
 
 

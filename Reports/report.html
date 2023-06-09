@@ -253,32 +253,9 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 08-Jun-2023 at 20:02:32 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
-    <h2>Environment</h2>
-    <table id="environment">
-      <tr>
-        <td>Packages</td>
-        <td>{"pluggy": "1.0.0", "pytest": "7.2.2"}</td></tr>
-      <tr>
-        <td>Platform</td>
-        <td>Windows-10-10.0.19045-SP0</td></tr>
-      <tr>
-        <td>Plugins</td>
-        <td>{"html": "3.2.0", "metadata": "2.0.4", "xdist": "3.2.1"}</td></tr>
-      <tr>
-        <td>Project Name</td>
-        <td>RacanaaAssignment</td></tr>
-      <tr>
-        <td>Python</td>
-        <td>3.11.2</td></tr>
-      <tr>
-        <td>Started Date</td>
-        <td>07/06/2023</td></tr>
-      <tr>
-        <td>Tester</td>
-        <td>RajkumarM</td></tr></table>
+    <p>Report generated on 09-Jun-2023 at 15:06:20 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>6 tests ran in 100.74 seconds. </p>
+    <p>6 tests ran in 54.30 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">6 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -294,53 +271,83 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">TestCases/test_broken_images.py::Test_001_BrokenImage::test_broken_image</td>
-          <td class="col-duration">11.91</td>
+          <td class="col-duration">11.71</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     __name__:custom_logger.py:32 *** Test_001_BrokenImage ***
+INFO     __name__:custom_logger.py:32 *** Broken image test start ***
+INFO     __name__:custom_logger.py:32 This is not broken image !
+INFO     __name__:custom_logger.py:32 This is broken image !
+INFO     __name__:custom_logger.py:32 This is broken image !
+INFO     __name__:custom_logger.py:32 This is not broken image !
+INFO     __name__:custom_logger.py:32 *** Broken image test end ***<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">TestCases/test_drop_down.py::Test_005_DropDown::test_drop_down</td>
-          <td class="col-duration">8.51</td>
+          <td class="col-duration">6.68</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     __name__:custom_logger.py:32 *** Test_005_DropDown test ***
+INFO     __name__:custom_logger.py:32 *** Drop down test start ***
+INFO     __name__:custom_logger.py:32 Drop down selected by visible text
+INFO     __name__:custom_logger.py:32 Drop down selected by index
+INFO     __name__:custom_logger.py:32 Drop down selected by value
+INFO     __name__:custom_logger.py:32 *** Drop down test end ***<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">TestCases/test_file_upload.py::Test_002_FileUpload::test_file_upload</td>
-          <td class="col-duration">16.73</td>
+          <td class="col-duration">6.85</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     __name__:custom_logger.py:32 *** Test_002_FileUpload test ***
+INFO     __name__:custom_logger.py:32 *** File upload test start ***
+INFO     __name__:custom_logger.py:32 File uploaded successfully
+INFO     __name__:custom_logger.py:32 *** File uploaded test end ***<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">TestCases/test_form_authentication.py::Test_003_FromAuthentication::test_login</td>
-          <td class="col-duration">18.77</td>
+          <td class="col-name">TestCases/test_form_authentication.py::Test_003_FormAuthentication::test_login</td>
+          <td class="col-duration">8.51</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     __name__:custom_logger.py:32 *** Test_003_FormAuthentication ***
+INFO     __name__:custom_logger.py:32 *** Form authentication login test start ***
+INFO     __name__:custom_logger.py:32 Login test passed
+INFO     __name__:custom_logger.py:32 *** Form authentication login test end ***
+INFO     __name__:custom_logger.py:32 *** Form authentication logout test start ***
+INFO     __name__:custom_logger.py:32 Logout test passed
+INFO     __name__:custom_logger.py:32 *** Form authentication logout test end ***<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">TestCases/test_form_authentication_ddt.py::Test_003_FromAuthentication_DDT::test_login</td>
-          <td class="col-duration">31.50</td>
+          <td class="col-name">TestCases/test_form_authentication_ddt.py::Test_003_FormAuthentication_DDT::test_login</td>
+          <td class="col-duration">13.08</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     __name__:custom_logger.py:32 *** Test_003_FormmAuthentication_DDT ***
+INFO     __name__:custom_logger.py:32 *** Form authentication DDT test start ***
+INFO     __name__:custom_logger.py:32 *** Form authentication DDT test end ***<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">TestCases/test_java_script_alert.py::Test_004_javaScriptAlert::test_java_script_alert</td>
-          <td class="col-duration">11.95</td>
+          <td class="col-duration">7.02</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     __name__:custom_logger.py:32 *** Test_004_javaScriptAlert ***
+INFO     __name__:custom_logger.py:32 *** Java script alerts tests start ***
+INFO     __name__:custom_logger.py:32 *** Js simple alert test start ***
+INFO     __name__:custom_logger.py:32 *** Js simple alert test end ***
+INFO     __name__:custom_logger.py:32 *** Js conform alert test start ***
+INFO     __name__:custom_logger.py:32 *** Js conform alert test end ***
+INFO     __name__:custom_logger.py:32 *** Js prompt test start ***
+INFO     __name__:custom_logger.py:32 *** Js prompt test end ***
+INFO     __name__:custom_logger.py:32 *** Java script alerts tests end ***<br/></div></td></tr></tbody></table></body></html>
