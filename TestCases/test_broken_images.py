@@ -11,7 +11,7 @@ class Test_001_BrokenImage:
     url = ReadProperties.get_broken_link_url()
 
     logger = Logger()
-    logger.log_info("*** Test_001_BrokenImage***")
+    logger.log_info("***Test_001_BrokenImage***")
 
     def test_broken_image(self, setup):
         self.driver = setup

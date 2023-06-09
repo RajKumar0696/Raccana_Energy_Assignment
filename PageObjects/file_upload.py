@@ -1,9 +1,10 @@
+import os
 from selenium.webdriver.common.by import By
 
 
 class FileUpload:
     btn_file_upload_id = "file-upload"
-    uploaded_file_path = r"C:\Users\WELCOME\Downloads\Rajkumar M.pdf"
+    uploaded_file_path = os.path.abspath("TestData/sample-upload-file.png")
     btn_file_submit_id = "file-submit"
 
     def __init__(self, driver):
